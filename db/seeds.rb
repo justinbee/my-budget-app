@@ -1,0 +1,1 @@
+user = User.create(name: "Justin Berhang", email: Rails.application.secrets.default_admin_email, password: Rails.application.secrets.default_admin_password, password_confirmation: Rails.application.secrets.default_admin_password)
