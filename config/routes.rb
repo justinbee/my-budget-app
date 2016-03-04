@@ -3,4 +3,7 @@ Rails.application.routes.draw do
 
   # Serve websocket cable requests in-process
   # mount ActionCable.server => '/cable'
+
+  resources :transactions, only: [:index, :edit, :update]
+  root :to => 'transactions#index'
 end
